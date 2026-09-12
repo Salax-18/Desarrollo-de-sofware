@@ -1,4 +1,4 @@
-import './BusquedaBar.css';
+import "./assets/BusquedaBar.css";
 
 interface SearchBarProps {
   busqueda: string;
