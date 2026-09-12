@@ -1,0 +1,77 @@
+.visitas-content {
+  --background: #f4f7fb;
+}
+
+.visitas-container {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding: 35px 20px 90px;
+}
+
+.visitas-header {
+  margin-bottom: 25px;
+}
+
+.visitas-header h1 {
+  margin: 0 0 6px;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #1f2937;
+}
+
+.visitas-header p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #777;
+}
+
+.lista-visitas {
+  background: transparent;
+}
+
+.visita-item {
+  --background: #ffffff;
+  --border-radius: 16px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --padding-top: 14px;
+  --padding-bottom: 14px;
+
+  margin-bottom: 14px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.visita-item h2 {
+  margin-bottom: 10px;
+
+  font-size: 19px;
+  font-weight: 600;
+
+  color: #1f2937;
+}
+
+.visita-item p {
+  margin: 5px 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+.estado-pendiente {
+  color: #e69b00 !important;
+  font-weight: 600;
+}
+
+.estado-finalizada {
+  color: #2e9d62 !important;
+  font-weight: 600;
+}
