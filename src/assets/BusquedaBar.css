@@ -1,0 +1,32 @@
+.busqueda-container {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto 20px;
+}
+
+.busqueda-input {
+  width: 100%;
+
+  padding: 14px 18px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d5d9e0;
+
+  border-radius: 12px;
+
+  background: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.busqueda-input:focus {
+  border-color: #3880ff;
+
+  box-shadow: 0 4px 15px rgba(56, 128, 255, 0.12);
+}

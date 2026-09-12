@@ -1,0 +1,49 @@
+.pacientes-list {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+.pacientes-list h2 {
+  margin-bottom: 20px;
+
+  color: #1f2937;
+}
+
+.pacientes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+
+  gap: 15px;
+}
+
+.paciente-card {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.paciente-card h3 {
+  margin: 0 0 15px;
+
+  color: #1f2937;
+
+  font-size: 18px;
+}
+
+.paciente-card p {
+  margin: 8px 0;
+
+  color: #666;
+
+  font-size: 14px;
+}
