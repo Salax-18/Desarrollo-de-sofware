@@ -2,7 +2,7 @@
 
 ## Netlify
 
-[Ver aplicación]()
+[Ver aplicación](https://challenge-02-contacts.netlify.app/)
 
 ## Instalación en el celular
 
