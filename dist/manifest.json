@@ -1,0 +1,9 @@
+{
+  "name":"Contactos PWA",
+  "short_name":"Contactos",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#f4f7fb",
+  "theme_color":"#2f5bea",
+  "icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml"}]
+}
