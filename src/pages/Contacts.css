@@ -1,0 +1,93 @@
+
+.contacts-header {
+  position: relative;
+  z-index: 10;
+}
+
+.contacts-toolbar {
+  --background: #6259e8;
+  --color: #ffffff;
+  --min-height: 60px;
+}
+
+.contacts-toolbar ion-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contacts-content {
+  --background: #f5f4f8;
+}
+
+.contacts-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 28px 20px;
+}
+
+.contacts-container > h2 {
+  margin: 24px 0 16px;
+  color: #252541;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.contact-form {
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(40, 40, 80, 0.06);
+}
+
+.contact-form ion-input {
+  --background: #f7f7fb;
+  --color: #252541;
+  --placeholder-color: #88889a;
+  --border-radius: 8px;
+  --padding-start: 12px;
+  margin-bottom: 16px;
+}
+
+.contact-form ion-button {
+  margin-top: 8px;
+  --border-radius: 10px;
+}
+
+.contacts-list {
+  padding: 0;
+  background: transparent;
+}
+
+.contacts-list ion-item {
+  --background: #ffffff;
+  --border-radius: 12px;
+  --padding-start: 16px;
+  --inner-padding-end: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contacts-list ion-label h3 {
+  margin: 8px 0;
+  color: #252541;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.contacts-list ion-label p {
+  margin: 6px 0;
+  color: #77778a;
+}
+
+@media (max-width: 600px) {
+  .contacts-container {
+    padding: 20px 14px;
+  }
+
+  .contact-form {
+    padding: 18px;
+  }
+}
