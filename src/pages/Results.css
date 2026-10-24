@@ -1,0 +1,638 @@
+
+.results-content {
+  --background: #f3f7ff;
+}
+
+.results-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px 16px 35px;
+}
+
+.results-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 22px 25px;
+  border-radius: 26px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(145deg, #0754d8, #287eff);
+  box-shadow: 0 14px 32px #0758e82b;
+}
+
+.results-hero::before,
+.results-hero::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #ffffff20;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.results-hero::before {
+  width: 220px;
+  height: 220px;
+  top: -140px;
+  right: -70px;
+}
+
+.results-hero::after {
+  width: 180px;
+  height: 180px;
+  bottom: -130px;
+  left: -65px;
+}
+
+.results-hero-icon {
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  margin: 0 auto 17px;
+  border: 1px solid #ffffff55;
+  border-radius: 21px;
+  color: #ffdb74;
+  background: #ffffff19;
+}
+
+.results-hero-icon ion-icon {
+  font-size: 36px;
+}
+
+.results-eyebrow {
+  margin: 0 0 8px;
+  color: #4284f5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.results-hero .results-eyebrow {
+  color: #c9ddff;
+}
+
+.results-hero h1 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: clamp(26px, 7vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.results-hero-text {
+  max-width: 340px;
+  margin: 0 auto;
+  color: #e0ebff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.results-hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 26px;
+  padding-top: 21px;
+  border-top: 1px solid #ffffff35;
+}
+
+.results-hero-stat {
+  display: flex;
+  min-width: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.results-hero-stat ion-icon {
+  color: #ffdf83;
+  font-size: 22px;
+}
+
+.results-hero-stat strong {
+  color: white;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.results-hero-stat span {
+  color: #dbe8ff;
+  font-size: 12px;
+}
+
+.results-stat-divider {
+  width: 1px;
+  height: 55px;
+  background: #ffffff40;
+}
+
+.results-section {
+  margin-top: 29px;
+}
+
+.results-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 2px 13px;
+}
+
+.results-section-heading h2 {
+  margin: 0;
+  color: #1d304d;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.results-section-heading ion-badge {
+  font-size: 10px;
+  padding: 7px 10px;
+}
+
+.results-progress-card {
+  margin: 0;
+  border: 1px solid #e6edf8;
+  border-radius: 23px;
+  background: #ffffff;
+  box-shadow: 0 9px 27px #183a7010;
+}
+
+.results-progress-card > ion-card-content {
+  padding: 21px 19px;
+}
+
+.results-player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #edf1f8;
+}
+
+.results-player-avatar {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 16px;
+  color: #1261e8;
+  background: #eaf2ff;
+}
+
+.results-player-avatar ion-icon {
+  font-size: 30px;
+}
+
+.results-player-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.results-player-info > span,
+.results-position > span {
+  display: block;
+  margin-bottom: 5px;
+  color: #8b9ab0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.results-player-info h3 {
+  overflow-wrap: anywhere;
+  margin: 0;
+  color: #263b58;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.results-position {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.results-position strong {
+  color: #0758df;
+  font-size: 24px;
+  font-weight: 850;
+}
+
+.results-points-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 19px 0;
+  padding: 18px;
+  border: 1px solid #e2ecff;
+  border-radius: 17px;
+  background: linear-gradient(120deg, #f0f5ff, #f8faff);
+}
+
+.results-points-panel > div:first-child > span {
+  color: #72829a;
+  font-size: 12px;
+}
+
+.results-points-panel p {
+  margin: 7px 0 0;
+  color: #0758df;
+  font-size: 14px;
+}
+
+.results-points-panel p strong {
+  font-size: 31px;
+  font-weight: 850;
+}
+
+.results-points-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  color: #e4a51c;
+  background: #fff1c9;
+}
+
+.results-points-icon ion-icon {
+  font-size: 26px;
+}
+
+.results-progress-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #64758e;
+  font-size: 12px;
+}
+
+.results-progress-label strong {
+  color: #0758df;
+}
+
+.results-progress-bar {
+  height: 9px;
+  overflow: hidden;
+  border-radius: 20px;
+  --background: #e8eef8;
+  --progress-background: #1769ed;
+}
+
+.results-missions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 25px 0 13px;
+}
+
+.results-missions-heading h3 {
+  margin: 0;
+  color: #263b58;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.results-missions-heading span {
+  color: #8a98ad;
+  font-size: 10px;
+}
+
+.results-mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.results-mission-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 10px;
+  border: 1px solid #edf1f8;
+  border-radius: 14px;
+  background: #fbfcff;
+}
+
+.results-mission-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  color: #98a5b7;
+  background: #edf1f6;
+}
+
+.results-mission-icon ion-icon {
+  font-size: 22px;
+}
+
+.results-mission-icon.is-complete {
+  color: #14834d;
+  background: #e1f7eb;
+}
+
+.results-mission-name {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.results-mission-name strong {
+  color: #334660;
+  font-size: 12px;
+}
+
+.results-mission-name span {
+  color: #8a98ad;
+  font-size: 10px;
+}
+
+.results-mission-row ion-badge {
+  flex-shrink: 0;
+  font-size: 9px;
+}
+
+.results-home-button {
+  height: 48px;
+  margin: 23px 0 0;
+  --background: #075ce8;
+  --border-radius: 13px;
+  --box-shadow: 0 6px 15px #0758e82a;
+  font-size: 13px;
+  font-weight: 750;
+  text-transform: none;
+}
+
+.results-ranking-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 14px;
+  color: #1768eb;
+  background: #e5efff;
+}
+
+.results-ranking-icon ion-icon {
+  font-size: 24px;
+}
+
+.results-section-description {
+  margin: -4px 2px 16px;
+  color: #7c8ba2;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.results-ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.results-ranking-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 15px 12px;
+  border: 1px solid #e7edf7;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px #173b7009;
+}
+
+.results-ranking-item.is-me {
+  border: 1.5px solid #5a95ff;
+  background: #f1f6ff;
+}
+
+.results-rank-number {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 33px;
+  height: 36px;
+  border-radius: 11px;
+  color: #7d8ba1;
+  background: #f0f3f8;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.results-rank-number ion-icon {
+  font-size: 20px;
+}
+
+.results-rank-number.rank-number-1 {
+  color: #b67b00;
+  background: #fff0be;
+}
+
+.results-rank-number.rank-number-2 {
+  color: #60748c;
+  background: #e8edf4;
+}
+
+.results-rank-number.rank-number-3 {
+  color: #a76135;
+  background: #ffeadc;
+}
+
+.results-ranking-avatar {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 15px;
+  color: #145bcd;
+  background: #eaf2ff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.rank-1 .results-ranking-avatar {
+  color: #966600;
+  background: #fff3ce;
+}
+
+.rank-2 .results-ranking-avatar {
+  color: #566b85;
+  background: #edf1f7;
+}
+
+.rank-3 .results-ranking-avatar {
+  color: #a25b31;
+  background: #fff0e6;
+}
+
+.results-ranking-user {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.results-ranking-user > strong {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  overflow-wrap: anywhere;
+  color: #263b58;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.results-ranking-user > span {
+  color: #8996aa;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.results-you-tag {
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #0758df;
+  background: #dce9ff;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+}
+
+.results-ranking-points {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.results-ranking-points strong {
+  color: #0758df;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.results-ranking-points span {
+  color: #8a98ad;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.results-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 15px;
+  color: #73839b;
+  font-size: 13px;
+}
+
+.results-loading ion-spinner {
+  color: #0758df;
+}
+
+.results-empty-card,
+.results-error-card {
+  margin: 0;
+  border-radius: 19px;
+}
+
+.results-empty-card ion-card-content {
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.results-empty-card ion-icon {
+  color: #e5b33e;
+  font-size: 39px;
+}
+
+.results-empty-card h3 {
+  color: #263b58;
+  font-size: 18px;
+}
+
+.results-empty-card p {
+  color: #7d8ba1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.results-error-card ion-card-content {
+  padding: 20px;
+}
+
+.results-refresh-button {
+  height: 49px;
+  margin: 26px 0 0;
+  --border-color: #1769ed;
+  --color: #0758df;
+  --border-radius: 13px;
+  font-size: 13px;
+  font-weight: 750;
+  text-transform: none;
+}
+
+.results-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 23px 5px 0;
+  color: #8090a6;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.results-footer ion-icon {
+  flex-shrink: 0;
+  color: #d6a52c;
+  font-size: 18px;
+}
+
+@media (max-width: 380px) {
+  .results-container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .results-hero {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .results-progress-card > ion-card-content {
+    padding: 17px 13px;
+  }
+
+  .results-ranking-item {
+    gap: 8px;
+    padding: 12px 8px;
+  }
+
+  .results-ranking-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .results-ranking-points strong {
+    font-size: 15px;
+  }
+}

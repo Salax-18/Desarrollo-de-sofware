@@ -1,0 +1,523 @@
+
+.home-header ion-toolbar {
+  --background: #172554;
+  --color: #ffffff;
+  --min-height: 64px;
+  padding: 0 8px;
+}
+
+.home-header ion-title {
+  font-size: 21px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.header-icon {
+  font-size: 27px;
+  color: #93c5fd;
+  margin-left: 14px;
+}
+
+.home-content {
+  --background: #f5f7fc;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 12px 12px;
+}
+
+.welcome-section {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 24px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #172554, #1d4ed8);
+  color: #ffffff;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 28px rgba(30, 64, 175, 0.15);
+}
+
+.welcome-label {
+  display: inline-block;
+  color: #bfdbfe;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.welcome-section h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 290px;
+  font-size: clamp(26px, 6vw, 34px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0 0 12px;
+}
+
+.welcome-section p {
+  position: relative;
+  z-index: 1;
+  max-width: 310px;
+  color: #dbeafe;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.welcome-decoration {
+  position: absolute;
+  right: -24px;
+  bottom: -36px;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: rgba(147, 197, 253, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-12deg);
+}
+
+.welcome-decoration ion-icon {
+  font-size: 94px;
+  color: rgba(219, 234, 254, 0.65);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 4px 14px;
+}
+
+.section-heading h2 {
+  color: #172554;
+  font-size: 19px;
+  font-weight: 800;
+  margin: 0 0 5px;
+}
+
+.section-heading p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sensor-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.sensor-grid {
+  padding: 0;
+}
+
+.sensor-grid ion-col {
+  padding: 6px;
+}
+
+.sensor-card {
+  --background: #ffffff;
+  margin: 0;
+  height: 100%;
+  min-height: 180px;
+  border-radius: 19px;
+  border: 1px solid #e8edf5;
+  box-shadow: 0 5px 15px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.sensor-card:active {
+  transform: scale(0.97);
+}
+
+.sensor-card ion-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 180px;
+  padding: 14px 12px 12px;
+}
+
+.sensor-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sensor-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 14px;
+}
+
+.sensor-icon-wrapper ion-icon {
+  font-size: 24px;
+}
+
+.sensor-number {
+  font-size: 11px;
+  font-weight: 800;
+  color: #94a3b8;
+}
+
+.sensor-card h3 {
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.3;
+  margin: 0 0 7px;
+  overflow-wrap: anywhere;
+}
+
+.sensor-card p {
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.sensor-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sensor-card-footer ion-icon {
+  font-size: 16px;
+}
+
+.sensor-card.teal .sensor-icon-wrapper {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.sensor-card.purple .sensor-icon-wrapper {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.sensor-card.orange .sensor-icon-wrapper {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.sensor-card.blue .sensor-icon-wrapper {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.sensor-card.pink .sensor-icon-wrapper {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.sensor-card.yellow .sensor-icon-wrapper {
+  background: #fef3c7;
+  color: #a16207;
+}
+
+.sensor-card.cyan .sensor-icon-wrapper {
+  background: #cffafe;
+  color: #0e7490;
+}
+
+.sensor-card.indigo .sensor-icon-wrapper {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.home-footer {
+  text-align: center;
+  padding: 18px 8px 8px;
+}
+
+.home-footer p {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (min-width: 600px) {
+  .home-container {
+    padding: 28px 20px;
+  }
+
+  .welcome-section {
+    padding: 36px;
+  }
+
+  .sensor-grid ion-col {
+    padding: 9px;
+  }
+
+  .sensor-card,
+  .sensor-card ion-card-content {
+    min-height: 195px;
+  }
+
+  .sensor-card ion-card-content {
+    padding: 18px;
+  }
+
+  .sensor-card h3 {
+    font-size: 17px;
+  }
+
+  .sensor-card p {
+    font-size: 13px;
+  }
+}
+
+/* ===== Tablero de misiones ===== */
+
+.missions-content {
+  --background: #f8fafc;
+}
+
+.missions-content::part(scroll) {
+  padding: 0 16px 24px;
+}
+
+.missions-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.missions-hero {
+  margin: 12px 0 24px;
+  padding: 22px 18px !important;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #172554, #4338ca);
+  color: white;
+  text-align: center;
+}
+
+.missions-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.missions-hero h1 {
+  margin: 0 0 8px;
+  color: white;
+  font-size: 25px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.missions-subtitle {
+  margin: 0;
+  color: #e0e7ff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.missions-stats {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  margin: 20px 0 16px;
+}
+
+.missions-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.missions-stats ion-icon {
+  font-size: 29px;
+  margin-bottom: 2px;
+}
+
+.missions-stats strong {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.missions-stats span {
+  font-size: 12px;
+}
+
+.missions-hero ion-progress-bar {
+  height: 7px;
+  --background: #c7d2fe;
+  --progress-background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.missions-progress-label {
+  margin: 9px 0 0;
+  font-size: 12px;
+}
+
+.missions-heading {
+  margin: 0 0 20px;
+}
+
+.missions-heading h2 {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.missions-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mission-card {
+  margin: 14px 0;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+}
+
+.mission-card ion-card-content {
+  padding: 18px;
+}
+
+.mission-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.mission-icon {
+  flex-shrink: 0;
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+.mission-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.mission-details ion-badge {
+  margin-bottom: 8px;
+}
+
+.mission-details h3 {
+  margin: 0 0 6px;
+  color: #334155;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.mission-details p {
+  margin: 0 0 7px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mission-details > strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.mission-details ion-button {
+  margin: 8px 0 0;
+  --border-radius: 14px;
+  font-weight: 600;
+  min-height: 46px;
+}
+
+.mission-distance {
+  color: #4338ca !important;
+  font-weight: 600;
+}
+
+.mission-photo {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  margin-top: 16px;
+  border-radius: 12px;
+}
+
+.mission-message {
+  margin: 18px 0;
+  border-radius: 16px;
+}
+
+.mission-message p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.refresh-progress {
+  margin-top: 18px;
+  --border-radius: 14px;
+  min-height: 48px;
+}
+
+.missions-footer {
+  margin: 22px 0 0;
+  color: #64748b;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 380px) {
+  .missions-hero {
+    padding: 20px 14px !important;
+  }
+
+  .missions-hero h1 {
+    font-size: 22px;
+  }
+
+  .missions-stats {
+    gap: 34px;
+  }
+
+  .mission-card ion-card-content {
+    padding: 14px;
+  }
+
+  .mission-layout {
+    gap: 10px;
+  }
+}
+
